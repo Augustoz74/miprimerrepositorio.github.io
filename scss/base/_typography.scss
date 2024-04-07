@@ -1,0 +1,15 @@
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    color: $color-primary;
+}
+
+p, a, li, span {
+  font-family: "montserrat", sans-serif;
+  font-weight: 400;
+}
+
+p {
+    color: $color-text-secondary;
+    font-size: 16px;
+}
