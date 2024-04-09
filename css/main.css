@@ -1,63 +1,17 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+/* Error: Expected identifier.
+ *   ,
+ * 7 | @
+ *   |  ^
+ *   '
+ *   scss\main.scss 7:2  root stylesheet */
 
-@font-face {
-  font-family: montserrat;
-  src: url(./assets/fonts/Montserrat-VariableFont_wght.ttf);
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Expected identifier.\a   \2577 \a 7 \2502  @\a   \2502   ^\a   \2575 \a   scss\\main.scss 7:2  root stylesheet";
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  color: #FF8911;
-}
-
-p, a, li, span {
-  font-family: "montserrat", sans-serif;
-  font-weight: 400;
-}
-
-p {
-  color: rgb(37, 36, 36);
-  font-size: 16px;
-}
-
-button {
-  background-color: #FF8911;
-  color: black;
-  padding: 10px 20px;
-  border: 2px solid black;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  margin-top: 20px;
-}
-
-button:hover {
-  background-color: #9F70FD;
-}
-
-header {
-  width: 100%;
-  background-color: #7F27FF;
-  padding: 20px;
-}
-header .menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #7F27FF; /* Fondo blanco semitransparente */
-}
-header .menu .logo img {
-  max-height: 50px;
-}
-header .menu .links {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  color: black;
-}
-
-/*# sourceMappingURL=main.css.map */
