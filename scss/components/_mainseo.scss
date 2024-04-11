@@ -51,53 +51,54 @@
             text-align: center;
             p {
                 font-size: 1.2em;
-            max-width: 600px;
-            margin: 0 auto 40px;
+                max-width: 600px;
+                margin: 0 auto 40px;
             }
-            .btn {
-                display: inline-block;
-                padding: 10px 20px;
-                background-color:#FF8911;
-                color: #fff;
-                text-decoration: none;
-                border-radius: 5px;
-                transition: background-color 0.3s;
-                margin-bottom: 10px;
-              }
-              .btn:hover {
-                background-color:#7F27FF;
-              }
-              @include s{
+            h1{
+                color: black;
+            }
+        }  
+    }
+    @include s{
+        
+        align-items: center;
+            .video iframe{
+              height: 145px;
+              width: 250px;
+            }
+           
+    }
+
+    @include m{
             
-                    height: 145px;
-                    width: 250px; 
-              }
+            align-items: center;
+            .video iframe{
+               height: 245px;
+               width: 350px;
+            }
+    }
 
-              @include m{
-                height: 145px;
-                    width: 250px; 
-              }
+     @include l{
+            align-items: center;
+             .video iframe{
+               height: 245px;
+               width: 350px;
+            }
+    }
+}
 
-              @include l{
-                height: 145px;
-                    width: 250px; 
-              }
-          }
-      }
-      
-  }
 
   .tarjetas-seo{
     display: flex;
     justify-content: space-around;
-    height: 400px;
+    height: 500px;
     align-items: center;
        .tarjeta-2{
         background-color: #FDBF60;
         border-radius: 10px;
         padding: 20px;
         width: 500px;
-        height: 400px;
+        height: 470px;
         border: 2px solid black;
             h3{
             font-size: 16px;
@@ -119,21 +120,21 @@
       }
       @include s{
         flex-direction: column;
-            height: 1000px;
+            height: 1300px;
             .tarjeta-2{
                 width: 300px;
                 font-size: 16px;
-                height: 450px;
+                height: 600px;
             }
       }
 
       @include m{
         flex-direction: column;
-            height: 1000px;
+            height: 1200px;
             .tarjeta-2{
                 width: 390px;
                 font-size: 16px;
-                height: 450px;
+                height: 550px;
             }
       }
 
@@ -143,7 +144,7 @@
             .tarjeta-2{
                 width: 500px;
                 font-size: 16px;
-                height: 450px;
+                height: 470px;
             }
       }
   }

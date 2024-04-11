@@ -27,81 +27,79 @@
   }
 
 .primera-seccion-contacto{
-    padding-top: 60px;
-    padding-bottom: 30%;
-	background-image: url(../assets/images/seccion-1-contacto.webp);
-	background-position: top left;
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-	width: 100%;
+    height: 600px;
+      background-image: url(../assets/images/fondo-sec-1.webp);
+      background-position: top left;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    .Texto-fondo{
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 10px;
+        font-size: 62px;
+        color: $color-text;
+        }
+    
+        @include s{
+            .primera-seccion-contacto{
+                height: 50%;
+                background-attachment: cover; 
+            }
+    
+            
+            .Texto-fondo{
+                font-size: 16px;
+                top: 28%;
+                text-align: center center;
+            }
+        }
+    
+        @include m{
+            .primera-seccion-contacto{
+                height: 50%;
+                background-attachment: cover; 
+            }
+    
+            
+            .Texto-fondo{
+                font-size: 22px;
+                top: 31%;
+                text-align: center center;
+            }
+        }
+    
+        @include l{
+            .primera-seccion-contacto{
+                height: 50%;
+                background-attachment: cover; 
+            }
+    
+            
+            .Texto-fondo{
+                font-size: 35px;
+                top: 38%;
+                text-align: center center;
+            }
+        }
+    
+        @include xl{
+            .primera-seccion-contacto{
+                height: 50%;
+                background-attachment: cover; 
+            }
+    
+            
+            .Texto-fondo{
+                font-size: 62px;
+                top: 48%;
+                text-align: center center;
+            }
+        }
 }
-.Texto-fondo{
-    position: absolute;
-    top: 50%;
-    left: 25%;
-    right: 30%;
-    transform: translate(-0%, -70%);
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 10px;
-    font-size: 62px;
-    color: black ;
-    }
 
-    @include s{
-        .primera-seccion-contacto{
-            height: 50%;
-            background-attachment: cover; 
-        }
-
-        
-        .Texto-fondo{
-            font-size: 16px;
-            top: 28%;
-            text-align: center center;
-        }
-    }
-
-    @include m{
-        .primera-seccion-contacto{
-            height: 50%;
-            background-attachment: cover; 
-        }
-
-        
-        .Texto-fondo{
-            font-size: 22px;
-            top: 31%;
-            text-align: center center;
-        }
-    }
-
-    @include l{
-        .primera-seccion-contacto{
-            height: 50%;
-            background-attachment: cover; 
-        }
-
-        
-        .Texto-fondo{
-            font-size: 35px;
-            top: 38%;
-            text-align: center center;
-        }
-    }
-
-    @include xl{
-        .primera-seccion-contacto{
-            height: 50%;
-            background-attachment: cover; 
-        }
-
-        
-        .Texto-fondo{
-            font-size: 62px;
-            top: 48%;
-            text-align: center center;
-        }
-    }
 
 
 .seccion-1-contacto{
